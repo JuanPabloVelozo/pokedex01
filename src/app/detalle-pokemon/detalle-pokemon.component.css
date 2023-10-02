@@ -1,0 +1,227 @@
+/* Estilo para el contenedor que permite el desplazamiento vertical */
+.scrollable-container2 {
+  max-height: 485px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+}
+.scrollable-container {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Estilo para la sección de datos a la derecha de la imagen */
+.data-section {
+  float: right;
+  width: 50%;
+  box-sizing: border-box;
+  padding-left: 20px; /* Espacio entre la imagen y los datos */
+}
+
+/* Estilo para la imagen */
+.pokemon-images {
+  float: left;
+  width: 50%;
+  box-sizing: border-box;
+  padding-right: 20px; /* Espacio entre la imagen y los datos */
+}
+
+.pokemon-image img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%; 
+}
+
+
+/* Estilo para el contenedor principal */
+.scrollable-container {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Estilo para el encabezado con el nombre y el botón */
+.pokemon-header {
+  display: flex;
+  justify-content: space-between; /* Coloca el nombre a la izquierda y el botón a la derecha */
+  align-items: center; /* Alinea verticalmente los elementos */
+}
+
+  /* Estilo para el nombre del Pokémon */
+  .pokemon-header h2 {
+    margin: 0; /* Elimina el margen predeterminado del h2 */
+  }
+
+  /* Estilo para el botón */
+  .pokemon-header button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+/* Estilo para la sección de habilidades debajo de la imagen */
+.abilities {
+  clear: both; /* Limpia los flotadores anteriores (la imagen y los datos) */
+  margin-top: 20px; /* Agrega espacio superior para separar de la imagen */
+  text-align: left; /* Alinea el texto a la izquierda */
+}
+
+.types {
+  float: right;
+  width: 50%;
+  box-sizing: border-box;
+  padding-left: 20px; 
+}
+
+/* Estilo para la sección de estadísticas */
+.stats-table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+  .stats-table th,
+  .stats-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+  }
+
+  .stats-table th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+  }
+
+  .stats-table tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+  }
+
+  .stats-table tbody tr:nth-child(even) {
+    background-color: #ffffff;
+  }
+
+
+/* Estilos para los tipos de Pokémon */
+.type-normal {
+  background-color: #A8A878;
+  color: #fff;
+}
+
+.type-fire {
+  background-color: #F08030;
+  color: #fff;
+}
+
+.type-water {
+  background-color: #6890F0;
+  color: #fff;
+}
+
+.type-grass {
+  background-color: #78C850;
+  color: #fff;
+}
+
+.type-electric {
+  background-color: #F8D030;
+  color: #000;
+}
+
+.type-ice {
+  background-color: #98D8D8;
+  color: #fff;
+}
+
+.type-fighting {
+  background-color: #C03028;
+  color: #fff;
+}
+
+.type-poison {
+  background-color: #A040A0;
+  color: #fff;
+}
+
+.type-ground {
+  background-color: #E0C068;
+  color: #fff;
+}
+
+.type-flying {
+  background-color: #A890F0;
+  color: #fff;
+}
+
+.type-psychic {
+  background-color: #F85888;
+  color: #fff;
+}
+
+.type-bug {
+  background-color: #A8B820;
+  color: #fff;
+}
+
+.type-rock {
+  background-color: #B8A038;
+  color: #fff;
+}
+
+.type-ghost {
+  background-color: #705898;
+  color: #fff;
+}
+
+.type-dark {
+  background-color: #705848;
+  color: #fff;
+}
+
+.type-steel {
+  background-color: #B8B8D0;
+  color: #000;
+}
+
+.type-fairy {
+  background-color: #EE99AC;
+  color: #000;
+}
+
+/* Estilos para los tipos de Pokémon */
+.type-normal,
+.type-fire,
+.type-water,
+.type-grass,
+.type-electric,
+.type-ice,
+.type-fighting,
+.type-poison,
+.type-ground,
+.type-flying,
+.type-psychic,
+.type-bug,
+.type-rock,
+.type-ghost,
+.type-dark,
+.type-steel,
+.type-fairy {
+  width: 80px; /* Ancho fijo para todos los tipos */
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding: 5px;
+  margin-right: 10px;
+  display: inline-block;
+}

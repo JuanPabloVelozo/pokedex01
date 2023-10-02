@@ -1,0 +1,102 @@
+/* Estilo para el contenedor de selección de región */
+.region-selection-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* Estilo para el contenedor de selección de región */
+.region-selection-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* Estilo para el texto "Selecciona una región:" */
+.region-label {
+  font-size: 18px; 
+  margin-right: 10px; 
+}
+
+/* Estilo para el campo de selección de región */
+select {
+  flex: 1;
+  padding: 10px;
+  font-size: 18px; 
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+
+/* Estilo para el campo de búsqueda de Pokémon */
+input[type="text"] {
+  width: 98%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+
+}
+
+/* Estilo para el contenedor que permite el desplazamiento vertical */
+.scrollable-container {
+  max-height: 600px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+}
+
+/* Estilo para la lista de Pokémon */
+.pokemon-list-container {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+  /* Estilo para cada elemento de la lista de Pokémon */
+  .pokemon-list-container li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+  }
+
+    /* Estilo para la imagen de Pokémon */
+    .pokemon-list-container li img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border: 2px solid #ccc;
+      border-radius: 50%;
+    }
+
+    /* Estilo para el nombre de Pokémon */
+    .pokemon-list-container li span {
+      margin-top: 5px;
+      font-size: 14px;
+      text-align: center;
+    }
+
+/* Consulta de medios para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+  .region-selection-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  input[type="text"] {
+    width: 100%;
+  }
+
+  .scrollable-container {
+    max-height: 300px;
+  }
+
+
+
+}
+
+

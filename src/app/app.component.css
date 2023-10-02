@@ -1,0 +1,139 @@
+/* Estilo general del contenedor */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: #333; 
+  border: 2px solid #666; 
+  border-radius: 10px;
+}
+
+/* Estilo de la columna izquierda (Lista de Pokémon) */
+.left-column {
+  flex: 2; 
+  max-width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-right: 10px; 
+}
+
+/* Estilo de la columna derecha (Detalles del Pokémon) */
+.right-column {
+  flex: 1; 
+  max-width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Media Query para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    border: none; 
+  }
+
+  .left-column,
+  .right-column {
+    flex: 1;
+    max-width: 100%;
+    margin-right: 0;
+  }
+
+
+  /* Estilo para la tabla de conteo de Pokémon */
+  .pokemon-count {
+    margin-top: 20px; 
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border: 2px solid #666; 
+  }
+
+    /* Estilo para cada fila de la tabla de conteo */
+    .pokemon-count p {
+      font-size: 16px;
+      color: #666;
+      margin: 5px 0;
+    }
+
+  /* Estilo para la sección de detalles del Pokémon */
+  .pokemon-details {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border: 2px solid #666; 
+  }
+}
+
+
+/* Estilo para el contenedor que permite el desplazamiento vertical */
+.scrollable-container {
+  max-height: 150px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+}
+
+/* Estilo para la tabla */
+.pokemon-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-left: 0; 
+}
+
+/* Estilo para las celdas de encabezado */
+.pokemon-table th {
+  background-color: #f2f2f2;
+  text-align: left;
+  padding: 8px;
+  border: 1px solid #dddddd;
+}
+
+/* Estilo para las celdas de datos */
+.pokemon-table td {
+  padding: 8px;
+  border: 1px solid #dddddd;
+}
+
+/* Estilo para las filas alternas (opcional) */
+.pokemon-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Aplicar margen izquierdo a partir de la sexta letra */
+.pokemon-table tbody tr:nth-child(n+7) {
+  margin-left: 50px; 
+}
+
+/* Estilos para el contenedor principal */
+.pokemon-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  margin-left: 20px;
+}
+
+/* Estilos para la imagen del Pokemon */
+.pokemon-image {
+  margin-right: 20px;
+}
+
+/* Estilos para la información del Pokemon */
+.pokemon-info {
+  text-align: left; 
+}
+
+
+.ng-template-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
